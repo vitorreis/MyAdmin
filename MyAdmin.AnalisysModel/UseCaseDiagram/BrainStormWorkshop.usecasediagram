@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="ae2fe054-7cd2-459b-8f26-c730db5c53a0" name="BrainStorm" linkedPackageId="4516e7e5-2dc6-45b4-9f58-a57efc60d32c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="f2437277-12bb-4ed8-a8ff-3e2d9cf61d50">
+      <elementDefinition Id="72493027-40dc-49fb-9e94-7c2fc39beddd" />
+      <body>Gerenciar Clientes
+ - Inserir, Atualizar
+ 
+Gerenciar Produtos
+  - Inserir, Atualizar
+ 
+Gerenciar Financeiros
+  
+- Inserir, Atualizar
+- Pedidos
+  - Ver o status de um pedido
+  - Cadastrar um pedido
+  - Cancelar um pedido
+- Venda
+  - Carregar um pedido na tela de venda
+  - Cadastrar uma venda
+  - Cancelar uma venda
+ - Relatórios
+  - Ver pedidos em aberto
+  - Ver vendas no periodo
+  - Ver lucro no periodo  
+  - Financeiros em aberto</body>
+      <annotatedElements>
+        <actorMoniker Id="12e5b064-bc18-4f26-a1bf-e489e0978db8" LastKnownName="User" />
+      </annotatedElements>
+    </comment>
+    <comment Id="d2d46247-3c52-4cfb-9d19-b8fbd786183a">
+      <elementDefinition Id="c312ddba-a40d-4c15-ab01-94c4ae825e01" />
+      <body>Restrições
+ - Verificar a possibilidade de utilizar um banco de dados no access ou banco de dados embarcado</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="3f0f3f4d-5f52-4f71-b392-76cb8b42d770" name="MyAdmin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="0620e317-40a1-44ba-9dc6-8e6d9a511ec6">
+            <elementDefinition Id="b7c9e683-d09e-4493-8a7b-a4b6ff56a5ca" />
+            <body>MyAdmin
+ - É um sistema que deve cuidar de cadastros, produtos e financeiros de uma pequena empresa.
+ - Desenvolvido para ser utilizado por profissionais liberais.
+</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="db699113-040b-4606-bd3a-3de26c413b87" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="12e5b064-bc18-4f26-a1bf-e489e0978db8" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e9e836d-3666-492c-a1cb-99ffa2fdf8b0" />
+        <targetEnds>
+          <association Id="8543c324-1542-4252-a6ce-6872427e341e" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="MyAdmin" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="3f0f3f4d-5f52-4f71-b392-76cb8b42d770" LastKnownName="MyAdmin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="024561ee-e971-4403-8f09-c738f201845c" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e703d942-5887-4a38-8e24-c564e373fada" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="346ceeae-0291-4b10-97d6-adbde74511f8" name="MyAdmin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c168ae5c-290f-44ea-bf15-c71378534f48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="02305bce-f845-433e-a8b1-52f5a7584c80" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4516e7e5-2dc6-45b4-9f58-a57efc60d32c" name="MyAdmin.AnalisysModel">
+    <elementDefinition Id="2d2e5e98-8bbf-465a-b585-1811dcd77201" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b1e8abf7-34c3-4cda-b6bb-d161e89191b6">
+        <profileInstance Id="78e21c85-0f12-460f-b667-f9e5fdee38d6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f4f2d0b7-3f69-4f91-aee9-d8506a4df19d">
+        <profileInstance Id="12310fce-230b-4cef-8b1b-c560c419de88" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

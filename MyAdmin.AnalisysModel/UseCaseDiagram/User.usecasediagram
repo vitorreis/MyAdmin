@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="9071d211-8f27-404a-be08-692062929602" name="User" linkedPackageId="87ac6d8f-8b15-4d91-94ee-80845613adf2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1bfed0c4-4c3b-4ede-8df1-48cf977e7577" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e9e836d-3666-492c-a1cb-99ffa2fdf8b0" />
+        <targetEnds>
+          <association Id="d48e966d-824a-4fce-aed2-17ef602e7f72" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Gerenciar Clientes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="18e0113f-458c-402e-aea7-4785494d6cca" LastKnownName="Gerenciar Clientes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b59fee1-188f-4847-a95f-eab144a8eae6" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b447f94-7c96-4a48-a8fe-0dd013a30883" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0191ede9-b6e5-491a-b839-f81ec5ed163b" name="Gerenciar Clientes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c23ccbcf-979a-4724-92d7-09e44671ce5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1d40f991-af75-4e70-9440-6db959d17edc" />
+          </association>
+          <association Id="6774f618-4eca-4f77-86ef-31242f371ce3" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Gerenciar produtos" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c9c22e59-0580-4a38-b070-c27221d6d97c" LastKnownName="Gerenciar produtos" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4a48230-acff-41a9-9b5e-41b7bd1df9aa" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d3d83c97-e968-42ef-9cd1-6e69a3e7ff81" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2890a02-5542-4a52-a5ee-e3ce98fb851b" name="Gerenciar produtos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53fb7985-74d8-4b26-ab03-53908c4c81e4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dfe7bddf-46b6-4be9-8eef-0d9d86bdd523" />
+          </association>
+          <association Id="591fe271-e8fb-4ae8-afc5-9752d2b10471" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Gerenciar Financeiros" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c960e04c-e4f6-4c11-bdd9-d58b104968d6" LastKnownName="Gerenciar Financeiros" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="388218a8-632d-454b-9e7d-923b9f8fa45c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aef7a026-9e80-44e9-994c-383ab41b772a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2534b702-a566-4b1c-b13f-b2d15cd32edb" name="Gerenciar Financeiros" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4982dc67-b4fa-48be-9b1b-4b411c3fa080" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3542447-8022-48b8-a241-cb067c9ef25b" />
+          </association>
+          <association Id="d1d461e8-ecdd-4678-9452-7ea946d156a2" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Verificar o status de um pedido" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d6b1db5a-8ea6-4a29-8e9c-903f4b36a8c3" LastKnownName="Verificar o status de um pedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d15e23f2-47c8-4c40-b895-aa381b378677" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e5d0f02c-4540-494a-9d66-b8709f1a6f03" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b5e47f4-7142-4834-bec5-5db59b392810" name="Verificar o status de um pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8486098-978b-45fc-80f2-8f82438fe408" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0816c99f-96bc-443b-ad82-63e823458c95" />
+          </association>
+          <association Id="6a48f7e6-4e75-46a3-817f-4a0175547a3a" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Cancelar um  pedido" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dc192e86-1141-43c9-8f86-942fe66a4da8" LastKnownName="Cancelar um  pedido" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4f8af400-b605-415b-a0d8-3e41809b72ed" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aab3c7b4-2cd1-434f-86de-6fbfb27a9106" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e226ce20-9a61-4ec5-ac88-5609aab3e2a8" name="Cancelar um  pedido" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb0b9ce7-93a1-4219-81d4-8c436a94add1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="59a3e397-9c2a-4e7c-bfb4-06e2b54d4bda" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="18e0113f-458c-402e-aea7-4785494d6cca" name="Gerenciar Clientes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83b4bd3c-8e18-4b49-b9d9-e613086ad105" />
+        <additions>
+          <include Id="ceda2e1b-1c90-4328-a9c4-0ab31ec1acd8">
+            <useCaseMoniker Id="b1d2101f-a6b6-439a-8d86-dcbd9d2234f1" LastKnownName="Atualizar um cliente" />
+            <elementDefinition Id="804faa7a-f4ff-47dd-bb75-13d30c9228af" />
+          </include>
+          <include Id="94b8e666-de38-42f0-86d4-2472ba333503">
+            <useCaseMoniker Id="de91149e-8dd6-4c07-a41c-93000b52d3eb" LastKnownName="Cadastrar um cliente" />
+            <elementDefinition Id="7b54d22a-a8d3-48f2-a17a-32810c696607" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c960e04c-e4f6-4c11-bdd9-d58b104968d6" name="Gerenciar Financeiros" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24975d2d-c0cf-4c7b-b585-082827efb6e0" />
+        <additions>
+          <include Id="43afb95f-ba1e-4fef-aa7f-cf3990b49972">
+            <useCaseMoniker Id="4cc5be9d-5cb0-4239-953d-b09b23526aae" LastKnownName="Cadastrar um financeiro" />
+            <elementDefinition Id="1680f4a2-d892-4574-a908-3bbc2d31d25d" />
+          </include>
+          <include Id="55563940-67d2-40ae-a13c-e0ea0ea75ffd">
+            <useCaseMoniker Id="16130989-3ddd-43bc-ba96-9834d74bd5d4" LastKnownName="Atualizar financeiros" />
+            <elementDefinition Id="2604fd17-1717-4f66-81bc-4b0e41911bb9" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d6b1db5a-8ea6-4a29-8e9c-903f4b36a8c3" name="Verificar o status de um pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb3e62a8-41d3-469f-ab18-808dfbf81e0c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dc192e86-1141-43c9-8f86-942fe66a4da8" name="Cancelar um  pedido" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f389e46e-3b26-4447-be6b-95d17ff84e18" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c9c22e59-0580-4a38-b070-c27221d6d97c" name="Gerenciar produtos" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ba1cffd4-0322-4cf0-9431-ca78b0dcf3e2" />
+        <additions>
+          <include Id="f25f7198-088e-4b6e-9e82-4bcb668042d7">
+            <useCaseMoniker Id="772ca26d-77a0-41a0-9c74-ed2b5f6b661d" LastKnownName="Atualizar um produto" />
+            <elementDefinition Id="b9f0c662-ac77-45d8-af17-ca5d7736bb87" />
+          </include>
+          <include Id="89b5b40b-7d4b-45b3-bd34-99950d2365e8">
+            <useCaseMoniker Id="cfc6fcf1-c3cb-48a5-9ada-2830d51c24af" LastKnownName="Cadastrar um produto" />
+            <elementDefinition Id="ebf5b8d8-93b0-41a1-8ff2-88623c432a49" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de91149e-8dd6-4c07-a41c-93000b52d3eb" name="Cadastrar um cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="56efca4d-ce30-4a80-8b9f-fb80afdfe720" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b1d2101f-a6b6-439a-8d86-dcbd9d2234f1" name="Atualizar um cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="823644d5-ec07-4910-b400-64168de53c4b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="772ca26d-77a0-41a0-9c74-ed2b5f6b661d" name="Atualizar um produto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b4c16fc-a7d3-4164-8482-7b3bb62b9554" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cfc6fcf1-c3cb-48a5-9ada-2830d51c24af" name="Cadastrar um produto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="805bfa1b-dac1-436e-9c7b-63e318dcfbc2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4cc5be9d-5cb0-4239-953d-b09b23526aae" name="Cadastrar um financeiro" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d19c7a6-9483-4a69-a73f-5450706a051a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="16130989-3ddd-43bc-ba96-9834d74bd5d4" name="Atualizar financeiros" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dbae1869-9dff-4f41-93da-9b9472898d99" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="87ac6d8f-8b15-4d91-94ee-80845613adf2" name="MyAdmin.AnalisysModel">
+    <elementDefinition Id="2d2e5e98-8bbf-465a-b585-1811dcd77201" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2631223d-11b7-463a-ac79-7fb02d80377a">
+        <profileInstance Id="9aa10ce1-6b86-4d1f-ac03-acc562be904c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="da84d4eb-6a2e-4dd8-8c2c-a1083b745172">
+        <profileInstance Id="bb6ad126-f81b-419b-9b66-64bb13371497" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

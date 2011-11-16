@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="515d608d-4e80-446d-8bcf-87467e37b2ee" name="StockMovement" linkedPackageId="a6d2384c-9e18-483e-9827-6ff36c96450c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d528e9b6-4ac8-43ea-acf7-1107a6bfc8d4" name="StockMovement" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4f57b90c-40ae-48df-98a1-991a58c7e675" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5f066b8-2669-497e-b13b-fe8f36c913e5" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bfe893d8-4e36-42ac-8970-ec921d47e408" />
+        <targetEnds>
+          <association Id="2b6419e5-f15f-498e-ac81-78237f450e0c" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="StockMovement" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d528e9b6-4ac8-43ea-acf7-1107a6bfc8d4" LastKnownName="StockMovement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07e1cb23-86dd-4081-af8d-cbc2554398a3" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3e13afd2-d03a-4178-bbb6-37fbb04c7539" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00ddd1cd-b9ff-43ba-8ae6-f329fb1a4f4b" name="StockMovement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12e98a99-5978-40b3-bcef-3af609ad3f67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="21e1e842-e9d3-4cc1-b965-4745df03c21e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c3abd491-8bfc-4050-b0fd-578b6f56d18c" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6724f0b5-f02e-4a1e-a430-28881ef1f99e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f2430545-4a53-4bd6-8467-1aa427a1e2ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="65e86640-57d9-40b3-bdae-c9be9554e6c9" name="AdressInfo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d5f895f-acd6-404c-9a63-8462114467b7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f2430545-4a53-4bd6-8467-1aa427a1e2ac" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6e62c248-899a-413b-ba8a-ea03b46203c8" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49ae2623-a4f9-440b-9abb-acb6e52300d5" />
+        <targetEnds>
+          <association Id="ee301bcb-ee6d-4688-a9af-a6c3288d5735" isDerived="false" sourceEndRoleName="Product" targetEndRoleName="StockMovement" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d528e9b6-4ac8-43ea-acf7-1107a6bfc8d4" LastKnownName="StockMovement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d4a84cb-b1ef-4257-9413-21c7cf1d01d0" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="cc56aa70-45ce-4a50-a7ba-c5140ffcb7a5" name="Lower" value="1">
+                      <elementDefinition Id="3973fb2c-9b2e-4ecb-87a2-cf2aac0a7b9c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5591dfed-ab58-4222-a1b4-1b30cff6042b" name="Upper" value="*">
+                      <elementDefinition Id="08a4202c-fa0d-4d50-8e3a-171a0e415873" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="633974cc-1a70-4fcf-8196-c7cf4ad11116" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48f83389-e5cb-4dad-8781-b80e96d287f4" name="StockMovement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ae08e9e9-d9a0-41af-93ca-30962f7e620c" name="Lower" value="1">
+                      <elementDefinition Id="2090a549-12a6-4618-8a8d-acef100ae5c9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3c4a171a-210d-4af5-a06c-0d4730ca9601" name="Upper" value="1">
+                      <elementDefinition Id="f8e99234-bb1f-4e2f-86cf-6650c07c0f52" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="99eb5fa1-2710-425f-a881-1f62037707fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="133d9ac5-4500-463c-8df0-acbdffa9c14e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2e666c2d-13c3-4e53-9bd7-5c93f65b862c" name="SalesValue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="252e5f0f-9a69-491c-906c-ab8072c12fa1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a4457b9c-bcb6-4783-82a2-b1124627e2a1" LastKnownName="UnlimitedNatural" />
+            </type_NamedElement>
+          </property>
+          <property Id="2d885e46-ff9f-46bf-b13e-d77f42f509e3" name="CostValue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ac3eec9-4fd4-4b7c-8516-e02f7de4921a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a4457b9c-bcb6-4783-82a2-b1124627e2a1" LastKnownName="UnlimitedNatural" />
+            </type_NamedElement>
+          </property>
+          <property Id="c2258151-808b-4df7-884d-9e007990a4cb" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d3f5c7bf-4565-458e-8fc8-6610b1b36b8d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a4457b9c-bcb6-4783-82a2-b1124627e2a1" LastKnownName="UnlimitedNatural" />
+            </type_NamedElement>
+          </property>
+          <property Id="c0523cd1-9ca0-412b-a0fa-79ce33f8e087" name="Group" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5155a166-ce60-4812-851e-1806b051e67b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f2430545-4a53-4bd6-8467-1aa427a1e2ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="d1afc5fa-59ee-4cae-b3ba-7616ebfd01e9" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e87e7669-ca25-4583-8cf5-48fefc530770" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f2430545-4a53-4bd6-8467-1aa427a1e2ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b6f0a796-19a5-4e41-bf35-115ea5606320" name="UpdatePrices" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c381d2f-24c7-441c-91dd-499398a9370a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b428872b-f1bb-4818-a669-a63babab3e9e" direction="Return" isUnique="false">
+                  <elementDefinition Id="46c69320-eb3b-4e4b-92e8-f25fe70eeea1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a4457b9c-bcb6-4783-82a2-b1124627e2a1" name="UnlimitedNatural" isAbstract="false" isLeaf="false" cachedFullName="UnlimitedNatural">
+        <elementDefinition Id="3ab42e7d-4969-445a-b209-471f5cb8209c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a6d2384c-9e18-483e-9827-6ff36c96450c" name="MyAdmin.AnalisysModel">
+    <elementDefinition Id="2d2e5e98-8bbf-465a-b585-1811dcd77201" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ac2af00d-8c89-4600-b027-5751024becbf">
+        <profileInstance Id="24ca4138-53fc-4794-9990-f651e75c40bc" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c5180d74-fdae-4f57-b6e2-7efe590b37d8">
+        <profileInstance Id="3f6a3205-9041-4555-a826-debd99d81049" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

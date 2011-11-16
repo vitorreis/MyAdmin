@@ -1,0 +1,5 @@
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLRepository\bin\Debug\MyAdmin.SQLRepository.dll
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLRepository\bin\Debug\MyAdmin.SQLRepository.pdb
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLRepository\obj\Debug\ResolveAssemblyReference.cache
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLRepository\obj\Debug\MyAdmin.SQLRepository.dll
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLRepository\obj\Debug\MyAdmin.SQLRepository.pdb

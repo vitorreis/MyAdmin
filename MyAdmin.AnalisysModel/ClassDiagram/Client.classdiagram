@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="cd55dd8c-e0a1-49f1-bc72-5a883fd73e39" name="Client" linkedPackageId="9ce45edb-c8e9-43c3-b5ed-6150a239bb73" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="a9ca1dcb-faea-46b9-bb21-95da0a340e15" name="IClient" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f302350b-65f8-4197-b914-7e4f090e49cb" />
+        <ownedAttributes>
+          <property Id="fd578162-2861-4a3e-84bc-4f15cbd61457" name="IdClient" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3d8a136-8cac-4514-8449-b3e215d1c291" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8efa3c74-533f-424c-b8ab-759f0c7a51c3" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="762e0c3a-2f18-4c36-974e-8020747685db" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bfe893d8-4e36-42ac-8970-ec921d47e408" />
+        <suppliersInternal>
+          <interfaceRealization Id="6d2a342f-af69-4fc7-b503-17e31db4c651">
+            <interfaceMoniker Id="a9ca1dcb-faea-46b9-bb21-95da0a340e15" LastKnownName="IClient" />
+            <elementDefinition Id="264750f5-2efd-4a29-bf8f-ba365ef27df1" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="0b7f4fd8-8e7c-4a2b-8c0b-8b11c97a78c1" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6724f0b5-f02e-4a1e-a430-28881ef1f99e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9a78498f-8579-41e9-86a5-b10ce9515af8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="f20c2385-89f8-4504-a109-e763d5b6db6d" name="AdressInfo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d5f895f-acd6-404c-9a63-8462114467b7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3b573a92-e826-46a0-9e9b-a1a2abd7b1d8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a0ac9179-a33f-486b-a1dc-2910e282e59d" name="Adress" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c3cbc053-e68f-42f9-bd01-6e581d918512" />
+        <targetEnds>
+          <association Id="3ad5f9b7-9552-41f1-a502-5c1507824d40" isDerived="false" sourceEndRoleName="Adress" targetEndRoleName="Client" isLeaf="false" isAbstract="false">
+            <classMoniker Id="762e0c3a-2f18-4c36-974e-8020747685db" LastKnownName="Client" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6246a6c6-9e3e-4573-8fbe-5b4de598516f" name="Adress" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5668772d-b183-4bc0-a0ce-3a89ac4ad6bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b3932e3-9792-4f98-86db-22c7a0300a82" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="219693e8-2588-476c-bba3-fd91edd442fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="801504b9-cf04-4ae4-bae8-b806718622d3" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="44436d96-0f87-41b1-ac23-81214c1c5f28" name="ZipCode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0651f7dc-5184-4859-883c-d3ebc726e9f6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cfb20dd7-f952-432f-adeb-a79e8104ba91" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="a985303b-1dba-463b-aae0-0c10cbcc50c1" name="Street" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dc1d010b-6fca-47c2-a65b-7b3a2f9818a5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b573a92-e826-46a0-9e9b-a1a2abd7b1d8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="3ff7b96f-305e-4614-9ea1-2522745fa886" name="Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aecf1f92-d1e0-45d1-aac0-bc9ce26c8a34" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b573a92-e826-46a0-9e9b-a1a2abd7b1d8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="c05bbcfd-dfc3-4657-b7a0-98448a6eacd4" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc467deb-a344-491f-91bc-416cd902a1fc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b573a92-e826-46a0-9e9b-a1a2abd7b1d8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2d3de964-0e59-459c-93df-77bd8fcbe92b" name="Country" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6713f1b-bb16-41a8-8402-6076d71e3148" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b573a92-e826-46a0-9e9b-a1a2abd7b1d8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="23857dd1-d797-44d4-adb2-8ec40c91c8e7" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="825ca398-fcec-46ad-a9a1-bf231d0130e7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3b089ae8-2197-478c-986e-24d6e18d8cf1" name="FillAdress" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="20b5ef64-1199-44a4-8425-dacecab5159b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b29772d5-ea96-45be-93d9-55864d64afcb" direction="Return" isUnique="false">
+                  <elementDefinition Id="b9905477-7468-4188-9ade-2bb6dcb49e95" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a33cea21-d6df-4a9a-b394-8b78ecbd7037" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c07f08b-d5a2-406c-9b9d-eea94da3f446" name="String zipCode" direction="In" isUnique="false">
+                  <elementDefinition Id="1da24eb5-9481-4e1a-93a7-f8fdf40ccaf7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a33cea21-d6df-4a9a-b394-8b78ecbd7037" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9a78498f-8579-41e9-86a5-b10ce9515af8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cfb20dd7-f952-432f-adeb-a79e8104ba91" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8efa3c74-533f-424c-b8ab-759f0c7a51c3" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9ce45edb-c8e9-43c3-b5ed-6150a239bb73" name="MyAdmin.AnalisysModel">
+    <elementDefinition Id="2d2e5e98-8bbf-465a-b585-1811dcd77201" />
+    <profileInstances>
+      <packageHasProfileInstances Id="26cb6171-ad9a-4d3d-8069-959bcc88cbdd">
+        <profileInstance Id="38fac9b9-497a-4147-a7c1-d13ab994ce2e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e0406fdc-a336-4856-b597-ca64d7992b19">
+        <profileInstance Id="c45b6c87-3fe3-42fc-a7ce-4c63a5aaeb71" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BrainStorm">
+  <useCaseModelRootMoniker Id="ae2fe054-7cd2-459b-8f26-c730db5c53a0" />
+  <nestedChildShapes>
+    <actorShape Id="08d358ce-fe77-4213-952e-1e5f5cb2b904" absoluteBounds="1.875, 2.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="12e5b064-bc18-4f26-a1bf-e489e0978db8" LastKnownName="User" />
+      <relativeChildShapes />
+    </actorShape>
+    <commentShape Id="9343bbb5-8b64-40ca-8e75-7f60678e4988" absoluteBounds="1.875, 2.875, 2, 3.25" customColor="251, 247, 200">
+      <commentMoniker Id="f2437277-12bb-4ed8-a8ff-3e2d9cf61d50" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentConnector edgePoints="[(2.125 : 2.875); (2.125 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="9343bbb5-8b64-40ca-8e75-7f60678e4988" />
+        <actorShapeMoniker Id="08d358ce-fe77-4213-952e-1e5f5cb2b904" />
+      </nodes>
+    </commentConnector>
+    <commentShape Id="de064321-eb3b-4373-8e3a-7b3619af21ec" absoluteBounds="3.375, 0.75, 4.25, 0.625" customColor="251, 247, 200">
+      <commentMoniker Id="d2d46247-3c52-4cfb-9d19-b8fbd786183a" />
+      <relativeChildShapes />
+    </commentShape>
+    <SubsystemShape Id="2f1b43ce-7fc0-4afe-ba34-ada71b95c670" absoluteBounds="4, 1.5, 2.875, 1.875" customColor="Silver">
+      <subsystemMoniker Id="3f0f3f4d-5f52-4f71-b392-76cb8b42d770" LastKnownName="MyAdmin" />
+      <nestedChildShapes>
+        <commentShape Id="cb3dca08-76e6-40e2-b4e1-e18b88e7e6ef" absoluteBounds="4.125, 2, 2.625, 1.125" customColor="251, 247, 200">
+          <commentMoniker Id="0620e317-40a1-44ba-9dc6-8e6d9a511ec6" />
+          <relativeChildShapes />
+        </commentShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(2.375 : 2.37971698113208); (4 : 2.41037735849057)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8543c324-1542-4252-a6ce-6872427e341e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="08d358ce-fe77-4213-952e-1e5f5cb2b904" />
+        <SubsystemShapeMoniker Id="2f1b43ce-7fc0-4afe-ba34-ada71b95c670" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

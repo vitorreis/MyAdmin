@@ -1,0 +1,5 @@
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.InfraStructure\bin\Debug\MyAdmin.InfraStructure.dll
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.InfraStructure\bin\Debug\MyAdmin.InfraStructure.pdb
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.InfraStructure\obj\Debug\ResolveAssemblyReference.cache
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.InfraStructure\obj\Debug\MyAdmin.InfraStructure.dll
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.InfraStructure\obj\Debug\MyAdmin.InfraStructure.pdb

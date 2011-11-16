@@ -1,0 +1,5 @@
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.LibraryBusiness\bin\Debug\MyAdmin.LibraryBusiness.dll
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.LibraryBusiness\bin\Debug\MyAdmin.LibraryBusiness.pdb
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.LibraryBusiness\obj\Debug\ResolveAssemblyReference.cache
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.LibraryBusiness\obj\Debug\MyAdmin.LibraryBusiness.dll
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.LibraryBusiness\obj\Debug\MyAdmin.LibraryBusiness.pdb

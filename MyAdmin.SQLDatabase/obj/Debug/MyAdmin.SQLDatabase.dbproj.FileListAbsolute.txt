@@ -1,0 +1,8 @@
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase_Script.PreDeployment.sql
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase_Script.PostDeployment.sql
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase_Database.sqlsettings
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase_Database.sqldeployment
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase_Database.sqlcmdvars
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase.deploymanifest
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\sql\debug\MyAdmin.SQLDatabase.dbschema
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.SQLDatabase\obj\Debug\MyAdmin.SQLDatabase.dbschema

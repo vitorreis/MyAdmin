@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="55699977-4bbf-4388-b1bf-fab4892ae2db" name="Application Component Structure" linkedPackageId="56dc9038-213d-4bd6-9e84-cf5ba6625591" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="fbaefe16-e01a-4294-a1cd-365f632a47e8">
+      <profileInstance Id="3f233127-1949-4722-b989-72c2c8305ff6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2fa06b16-98af-4d82-a099-0a4496f08e8d">
+      <profileInstance Id="b4850713-7f11-46a4-bb3e-9130c03bf011" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="06b00172-1ab9-490f-8bcb-a1d9fd9dc2de" name="MyAdmin.UI.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3a01b4a5-df48-4f11-9404-c93b71bcecfd" />
+        <suppliersInternal>
+          <dependency Id="3356738a-30e0-4f3a-92f5-1bfa485688fc">
+            <componentMoniker Id="519a5848-5ba0-4010-a721-b14bafefc68a" LastKnownName="MyAdmin.LibraryBusiness.dll" />
+            <elementDefinition Id="5fa4d5c6-29f5-47d7-b864-ab24b9a009ad" />
+          </dependency>
+          <dependency Id="49331240-08f7-4539-aa78-0c1f0b620c4f">
+            <componentMoniker Id="0b5bf81e-a898-46af-a204-88529ffdad2c" LastKnownName="MyAdmin.InfraStructure.dll" />
+            <elementDefinition Id="b6632d2e-877c-43a6-9f6f-12583670e111" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="519a5848-5ba0-4010-a721-b14bafefc68a" name="MyAdmin.LibraryBusiness.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a8f7661d-4703-49cd-b093-37597bf6e938" />
+        <suppliersInternal>
+          <dependency Id="8999aefe-44bf-4ce4-89dd-d5c734ae54a8">
+            <componentMoniker Id="121aff87-ddbb-4152-9f2a-66a834c74134" LastKnownName="MyAdmin.SQLRepository.dll" />
+            <elementDefinition Id="686da76b-47a9-4c03-a670-844b9411a9ab" />
+          </dependency>
+          <dependency Id="542b7f24-a118-4887-80a1-99f994bddb4a">
+            <componentMoniker Id="0b5bf81e-a898-46af-a204-88529ffdad2c" LastKnownName="MyAdmin.InfraStructure.dll" />
+            <elementDefinition Id="0de95441-a8f2-4474-84b3-9eae77d5f94a" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0b5bf81e-a898-46af-a204-88529ffdad2c" name="MyAdmin.InfraStructure.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94262cd2-9db5-46f0-a890-8ecc8bf6e8f5" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="121aff87-ddbb-4152-9f2a-66a834c74134" name="MyAdmin.SQLRepository.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c52625d0-c66f-418b-9589-088f81611cba" />
+        <suppliersInternal>
+          <dependency Id="c00f8475-044e-409a-a6ec-f57416e01658">
+            <componentMoniker Id="0b5bf81e-a898-46af-a204-88529ffdad2c" LastKnownName="MyAdmin.InfraStructure.dll" />
+            <elementDefinition Id="86f365c0-0671-4705-9da9-36f1c969292a" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="16de39d9-9599-4bdc-874e-20b2d18fab7f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="d97676d7-2519-492e-abe5-f846e13bb32b" />
+            <type_NamedElement>
+              <interfaceMoniker Id="6b34bfc8-0ef7-4406-8088-5f22ed4454b5" LastKnownName="ADO.NET" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c7d3a29e-a03a-4056-b942-f33c0b403f02" name="MyAdmin.Database" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="620d259a-9821-4628-9ca3-80ccaa5fdeda" />
+        <ownedAttributesInternal>
+          <providedInterface Id="f25b945c-6a9d-43b1-9a21-f17f3e44964c" name="TSQL" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="59c07007-b55b-49da-a7d1-bda1973f3a64" />
+            <type_NamedElement>
+              <interfaceMoniker Id="42adf10f-15d9-43cb-8f12-84e702be975b" LastKnownName="TSQL" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="42adf10f-15d9-43cb-8f12-84e702be975b" name="TSQL" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0ae7d39-0fbe-4eb1-95b6-1dbc159939f1" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="6b34bfc8-0ef7-4406-8088-5f22ed4454b5" name="ADO.NET" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16adcda6-1916-4a5a-a330-7e78e4dc8571" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="56dc9038-213d-4bd6-9e84-cf5ba6625591" name="MyAdmin.DesignModel">
+    <elementDefinition Id="8050e1f9-8640-4a00-a035-5fb5f5a70f8a" />
+  </package>
+</componentModel>

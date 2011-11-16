@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="2d2e5e98-8bbf-465a-b585-1811dcd77201"
+  name="MyAdmin.AnalisysModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="b7c9e683-d09e-4493-8a7b-a4b6ff56a5ca">
+      <body>MyAdmin
+ - É um sistema que deve cuidar de cadastros, produtos e financeiros de uma pequena empresa.
+ - Desenvolvido para ser utilizado por profissionais liberais.
+</body>
+    </comment>
+    <comment
+      Id="72493027-40dc-49fb-9e94-7c2fc39beddd">
+      <body>Gerenciar Clientes
+ - Inserir, Atualizar
+ 
+Gerenciar Produtos
+  - Inserir, Atualizar
+ 
+Gerenciar Financeiros
+  
+- Inserir, Atualizar
+- Pedidos
+  - Ver o status de um pedido
+  - Cadastrar um pedido
+  - Cancelar um pedido
+- Venda
+  - Carregar um pedido na tela de venda
+  - Cadastrar uma venda
+  - Cancelar uma venda
+ - Relatórios
+  - Ver pedidos em aberto
+  - Ver vendas no periodo
+  - Ver lucro no periodo  
+  - Financeiros em aberto</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="2e9e836d-3666-492c-a1cb-99ffa2fdf8b0"
+          LastKnownName="User"
+          LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="c312ddba-a40d-4c15-ab01-94c4ae825e01">
+      <body>Restrições
+ - Verificar a possibilidade de utilizar um banco de dados no access ou banco de dados embarcado</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="db699113-040b-4606-bd3a-3de26c413b87"
+        name="MyAdmin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2e9e836d-3666-492c-a1cb-99ffa2fdf8b0"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="02305bce-f845-433e-a8b1-52f5a7584c80"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="MyAdmin"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="db699113-040b-4606-bd3a-3de26c413b87"
+              LastKnownName="MyAdmin"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e703d942-5887-4a38-8e24-c564e373fada"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c168ae5c-290f-44ea-bf15-c71378534f48"
+                  name="MyAdmin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1d40f991-af75-4e70-9440-6db959d17edc"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Gerenciar Clientes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="83b4bd3c-8e18-4b49-b9d9-e613086ad105"
+              LastKnownName="Gerenciar Clientes"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b447f94-7c96-4a48-a8fe-0dd013a30883"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c23ccbcf-979a-4724-92d7-09e44671ce5f"
+                  name="Gerenciar Clientes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dfe7bddf-46b6-4be9-8eef-0d9d86bdd523"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Gerenciar produtos"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ba1cffd4-0322-4cf0-9431-ca78b0dcf3e2"
+              LastKnownName="Gerenciar produtos"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3d83c97-e968-42ef-9cd1-6e69a3e7ff81"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53fb7985-74d8-4b26-ab03-53908c4c81e4"
+                  name="Gerenciar produtos"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c3542447-8022-48b8-a241-cb067c9ef25b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Gerenciar Financeiros"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="24975d2d-c0cf-4c7b-b585-082827efb6e0"
+              LastKnownName="Gerenciar Financeiros"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aef7a026-9e80-44e9-994c-383ab41b772a"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4982dc67-b4fa-48be-9b1b-4b411c3fa080"
+                  name="Gerenciar Financeiros"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0816c99f-96bc-443b-ad82-63e823458c95"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Verificar o status de um pedido"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eb3e62a8-41d3-469f-ab18-808dfbf81e0c"
+              LastKnownName="Verificar o status de um pedido"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5d0f02c-4540-494a-9d66-b8709f1a6f03"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8486098-978b-45fc-80f2-8f82438fe408"
+                  name="Verificar o status de um pedido"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="59a3e397-9c2a-4e7c-bfb4-06e2b54d4bda"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Cancelar um  pedido"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f389e46e-3b26-4447-be6b-95d17ff84e18"
+              LastKnownName="Cancelar um  pedido"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aab3c7b4-2cd1-434f-86de-6fbfb27a9106"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb0b9ce7-93a1-4219-81d4-8c436a94add1"
+                  name="Cancelar um  pedido"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="19c63513-7501-4a15-80e0-a222037fe250"
+        LastKnownName="MyAdmin.LibraryBusiness"
+        LastKnownLocation="Package_2212.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="83b4bd3c-8e18-4b49-b9d9-e613086ad105"
+        name="Gerenciar Clientes"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="804faa7a-f4ff-47dd-bb75-13d30c9228af">
+            <useCaseMoniker
+              Id="823644d5-ec07-4910-b400-64168de53c4b"
+              LastKnownName="Atualizar um cliente"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+          </include>
+          <include
+            Id="7b54d22a-a8d3-48f2-a17a-32810c696607">
+            <useCaseMoniker
+              Id="56efca4d-ce30-4a80-8b9f-fb80afdfe720"
+              LastKnownName="Cadastrar um cliente"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="24975d2d-c0cf-4c7b-b585-082827efb6e0"
+        name="Gerenciar Financeiros"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1680f4a2-d892-4574-a908-3bbc2d31d25d">
+            <useCaseMoniker
+              Id="0d19c7a6-9483-4a69-a73f-5450706a051a"
+              LastKnownName="Cadastrar um financeiro"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+          </include>
+          <include
+            Id="2604fd17-1717-4f66-81bc-4b0e41911bb9">
+            <useCaseMoniker
+              Id="dbae1869-9dff-4f41-93da-9b9472898d99"
+              LastKnownName="Atualizar financeiros"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eb3e62a8-41d3-469f-ab18-808dfbf81e0c"
+        name="Verificar o status de um pedido"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f389e46e-3b26-4447-be6b-95d17ff84e18"
+        name="Cancelar um  pedido"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ba1cffd4-0322-4cf0-9431-ca78b0dcf3e2"
+        name="Gerenciar produtos"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b9f0c662-ac77-45d8-af17-ca5d7736bb87">
+            <useCaseMoniker
+              Id="9b4c16fc-a7d3-4164-8482-7b3bb62b9554"
+              LastKnownName="Atualizar um produto"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+          </include>
+          <include
+            Id="ebf5b8d8-93b0-41a1-8ff2-88623c432a49">
+            <useCaseMoniker
+              Id="805bfa1b-dac1-436e-9c7b-63e318dcfbc2"
+              LastKnownName="Cadastrar um produto"
+              LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="56efca4d-ce30-4a80-8b9f-fb80afdfe720"
+        name="Cadastrar um cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="823644d5-ec07-4910-b400-64168de53c4b"
+        name="Atualizar um cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9b4c16fc-a7d3-4164-8482-7b3bb62b9554"
+        name="Atualizar um produto"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="805bfa1b-dac1-436e-9c7b-63e318dcfbc2"
+        name="Cadastrar um produto"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d19c7a6-9483-4a69-a73f-5450706a051a"
+        name="Cadastrar um financeiro"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dbae1869-9dff-4f41-93da-9b9472898d99"
+        name="Atualizar financeiros"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="508ec9bb-130c-4630-9c6e-e126882df815"
+        name="Order"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="6b22e905-08ce-4dde-b04f-99e43ff2d405"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="25914648-054c-4fec-b5a2-6d387985516a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05fc2330-56dc-4fe6-a0fe-5b182f9db8d6"
+                  LastKnownName="Informar um cliente"
+                  LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="32cba014-cbe2-41d9-85ee-b6539ffff274"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="05fc2330-56dc-4fe6-a0fe-5b182f9db8d6"
+            name="Informar um cliente"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="77b57389-2c88-4f39-a404-53f221a253d8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b7dc7042-ebe5-4ec3-845f-40f9712513a6"
+                  LastKnownName="Informar os produtos"
+                  LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b7dc7042-ebe5-4ec3-845f-40f9712513a6"
+            name="Informar os produtos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f6ad7bc2-92af-4bf8-8aca-8e273fe42e28"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bd43bba5-5af8-4015-91c8-425ac03e92fe"
+                  LastKnownName="Informar as condições do pagamento"
+                  LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bd43bba5-5af8-4015-91c8-425ac03e92fe"
+            name="Informar as condições do pagamento"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5f39711e-423d-4051-a89a-c03e1ddd3510"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="32cba014-cbe2-41d9-85ee-b6539ffff274"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="MyAdmin.AnalisysModel.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

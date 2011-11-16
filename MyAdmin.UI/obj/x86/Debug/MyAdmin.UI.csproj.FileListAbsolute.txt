@@ -1,0 +1,9 @@
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\bin\Debug\MyAdmin.UI.exe.config
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\bin\Debug\MyAdmin.UI.exe
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\bin\Debug\MyAdmin.UI.pdb
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\obj\x86\Debug\MyAdmin.UI.Properties.Resources.resources
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\obj\x86\Debug\MyAdmin.UI.exe
+E:\Workspace\Software\CSharp\MyAdmin\MyAdmin.UI\obj\x86\Debug\MyAdmin.UI.pdb

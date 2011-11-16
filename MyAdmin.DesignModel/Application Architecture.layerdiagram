@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="93ddc0b6-f814-486d-b3c1-713602eaf6bb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="29158dd9-49e2-4e54-862d-20fab4d34a3d" name="User">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b3dc67d9-6ccd-47ed-b88e-43e23b123c4c" direction="Forward">
+          <layerMoniker Id="76ed23ee-0260-4f46-ab8a-72ada9e4170f" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="ccfb6d0c-718c-4247-b842-66d5e3569a4b" name="System">
+      <childLayers>
+        <layer Id="76ed23ee-0260-4f46-ab8a-72ada9e4170f" name="MyAdmin User Inteface">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="af5dba3f-03f5-4b04-a336-447ee128fade" direction="Forward">
+              <layerMoniker Id="f1fef266-cabf-4f52-b1b1-c3faaaf6b6dd" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="8bb37734-895e-4c3a-add9-d04e276bbd53" direction="Forward">
+              <layerMoniker Id="36874808-4852-44cd-a3b2-60122c893de6" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="f1fef266-cabf-4f52-b1b1-c3faaaf6b6dd" name="MyAdmin Library Business">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="e2bb4402-5962-4045-830d-bcccb30674fe" direction="Forward">
+              <layerMoniker Id="2f9da8ab-ba83-41bd-991e-ea3f3245455f" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="8a445982-54ee-4369-b972-110b7dcca90e" direction="Forward">
+              <layerMoniker Id="36874808-4852-44cd-a3b2-60122c893de6" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="2f9da8ab-ba83-41bd-991e-ea3f3245455f" name=" MyAdmin SQL Data Access">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="c91275e9-9fc6-448b-b2ee-d552af014ab0" direction="Forward">
+              <layerMoniker Id="a508b60c-2995-4cf8-b4b5-50e691b86e5f" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="81842902-f649-4634-994f-0257e457170b" direction="Forward">
+              <layerMoniker Id="36874808-4852-44cd-a3b2-60122c893de6" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="36874808-4852-44cd-a3b2-60122c893de6" name="MyAdmin Infrastructure" />
+      </childLayers>
+    </layer>
+    <layer Id="a508b60c-2995-4cf8-b4b5-50e691b86e5f" name="MyAdmin Database" />
+  </layers>
+</layerModel>

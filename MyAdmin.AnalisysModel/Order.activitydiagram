@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="99ddd552-c159-404f-a38c-d0883df06b53" name="Order" linkedPackageId="3fd7be03-4a8f-454b-bdd7-3dd192e840c7" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="bcc87328-7b27-4f17-b22d-cf6324af9fc3">
+      <profileInstance Id="48d54662-4abd-48ee-b346-8fa6c91200da" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="92f33fd9-39e3-43be-b6cb-a8444b10eefe">
+      <profileInstance Id="873084f3-452c-4a6e-9034-8b7ca56ee6e9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="96ce3330-222b-4b01-ab2b-a680ca48f262" name="Order" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="508ec9bb-130c-4630-9c6e-e126882df815" />
+        <nodes>
+          <initialNode Id="aa8e9649-f03e-4b92-9c71-23c4586ce18f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="6b22e905-08ce-4dde-b04f-99e43ff2d405" />
+            <flowNodeTargets>
+              <controlFlow Id="b8dd9504-36f3-416d-bcfb-d9fadac7d385" isLeaf="false">
+                <opaqueActionMoniker Id="15d036eb-8a59-419a-bc42-38d125ec9c12" LastKnownName="Informar um cliente" />
+                <elementDefinition Id="25914648-054c-4fec-b5a2-6d387985516a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="192df0bb-ed98-4b34-9562-f874947373e3" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="32cba014-cbe2-41d9-85ee-b6539ffff274" />
+          </activityFinalNode>
+          <opaqueAction Id="15d036eb-8a59-419a-bc42-38d125ec9c12" name="Informar um cliente" isLeaf="false">
+            <elementDefinition Id="05fc2330-56dc-4fe6-a0fe-5b182f9db8d6" />
+            <flowNodeTargets>
+              <controlFlow Id="b8d40d62-5722-4c6e-b02c-32b42459f117" isLeaf="false">
+                <opaqueActionMoniker Id="575edc9b-1a19-4c57-bf5f-ccc89c22be37" LastKnownName="Informar os produtos" />
+                <elementDefinition Id="77b57389-2c88-4f39-a404-53f221a253d8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="575edc9b-1a19-4c57-bf5f-ccc89c22be37" name="Informar os produtos" isLeaf="false">
+            <elementDefinition Id="b7dc7042-ebe5-4ec3-845f-40f9712513a6" />
+            <flowNodeTargets>
+              <controlFlow Id="a119fd17-d50e-4687-aef4-29ab734a5c13" isLeaf="false">
+                <opaqueActionMoniker Id="cbd14e77-8793-412c-9b1a-207f5f9594a3" LastKnownName="Informar as condições do pagamento" />
+                <elementDefinition Id="f6ad7bc2-92af-4bf8-8aca-8e273fe42e28" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cbd14e77-8793-412c-9b1a-207f5f9594a3" name="Informar as condições do pagamento" isLeaf="false">
+            <elementDefinition Id="bd43bba5-5af8-4015-91c8-425ac03e92fe" />
+            <flowNodeTargets>
+              <controlFlow Id="85f3beaf-c4ca-4dd0-af89-209733bbc2f2" isLeaf="false">
+                <activityFinalNodeMoniker Id="192df0bb-ed98-4b34-9562-f874947373e3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="5f39711e-423d-4051-a89a-c03e1ddd3510" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="3fd7be03-4a8f-454b-bdd7-3dd192e840c7" name="MyAdmin.AnalisysModel">
+    <elementDefinition Id="2d2e5e98-8bbf-465a-b585-1811dcd77201" />
+  </package>
+</activityRootModel>
